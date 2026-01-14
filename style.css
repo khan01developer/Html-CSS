@@ -1,0 +1,90 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* Nav bar */
+nav{
+    display: flex;
+    margin: 2%;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    padding: 20px;
+    color: rgb(101, 99, 99);
+}
+.logo{
+    font-size: 2rem;
+    margin-left: 10px;
+}
+.btn{
+    margin-right: 20px;
+    margin-top: 10px; 
+}
+.btn a{
+    text-decoration: none;
+    padding: 8px;
+    color: rgb(4, 178, 236);
+    background-color: rgb(191, 219, 230);
+    border: 2px solid rgb(191, 219, 230) ;
+    border-radius: 5px;
+}
+/* Main section */
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.left{
+    flex-basis: 25%;
+    margin-bottom: 10%;
+}
+.right{
+    flex-basis: 40%;
+}
+.left h1{
+    font-size: 3rem;
+}
+.left p{
+    margin-top: 20px;
+    font-size:1.2rem;
+}
+.left button{
+    margin-top: 30px;
+    color: white;
+    padding: 20px 35px;
+    background-color: rgb(4, 178, 236);
+    border: 2px solid rgb(4, 178, 236);
+    border-radius: 15px;
+}
+span{
+    color:rgb(4, 178, 236) ;
+}
+.right img{
+     width: 30vw;
+    margin-bottom: 18%;
+    margin-left: 10%; 
+}
+@media (width<=1400px) {
+    .right img{
+        width: 40vw;
+    }
+}
+@media (width<=1024px) {
+     .container{
+        flex-direction: column;
+     }
+         .right img{
+            margin: 0px;
+        width: 90vw;
+    }
+}
